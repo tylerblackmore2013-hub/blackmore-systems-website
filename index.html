@@ -205,8 +205,8 @@
     BLACKMORE SYSTEMS
   </div>
   <ul class="nav-links">
-    <li><a onclick="showPage('hardline')" id="nav-hardline">Hardline</a></li>
-    <li><a onclick="showPage('tripwire')" id="nav-tripwire">Tripwire</a></li>
+    <li><a onclick="showPage('home')" id="nav-home">Home</a></li>
+    <li><a onclick="showPage('preorder')" id="nav-preorder">Pre-Order</a></li>
     <li><a onclick="showPage('research')" id="nav-research">Publications</a></li>
     <li><a onclick="showPage('contact')" id="nav-contact">Contact</a></li>
   </ul>
@@ -217,55 +217,38 @@
   <div class="page-pad" style="padding:7rem 3rem 5rem;max-width:1400px;margin:0 auto;position:relative;">
     <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.02) 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(ellipse 70% 90% at 20% 40%,black 20%,transparent 80%);pointer-events:none;"></div>
     <div class="fu fu1" style="font-family:'Barlow Condensed',sans-serif;font-size:11px;letter-spacing:0.28em;text-transform:uppercase;color:var(--accent);margin-bottom:1.5rem;display:flex;align-items:center;gap:1rem;">
-      <span style="width:36px;height:1px;background:var(--accent);display:block;"></span>Defense Technology
+      <span style="width:36px;height:1px;background:var(--accent);display:block;"></span>Communications Hardware
     </div>
     <h1 class="fu fu2" style="font-family:'Bebas Neue',sans-serif;font-size:clamp(4rem,9.5vw,9rem);line-height:0.93;letter-spacing:0.04em;max-width:1000px;margin-bottom:2rem;">
       COMMUNICATION<br>WITHOUT<br><span style="color:var(--accent);">COMPROMISE</span>
     </h1>
     <p class="fu fu3" style="font-size:clamp(1rem,1.15vw,1.15rem);color:var(--text-secondary);max-width:560px;line-height:1.9;margin-bottom:3rem;">
-      Blackmore Systems develops secure communication and RF sensing technologies for environments where conventional wireless systems are jammed, exploited, or prohibited.
+      Blackmore Systems develops communication hardware for environments where conventional wireless systems are jammed, exploited, or prohibited.
     </p>
     <div class="fu fu3" style="display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;">
-      <span class="btn-primary" onclick="showPage('hardline')">View Hardline</span>
-      <span class="btn-ghost" onclick="showPage('tripwire')">View Tripwire</span>
+      <span class="btn-primary" onclick="document.getElementById('hardline').scrollIntoView({behavior:'smooth'})">View Hardline</span>
     </div>
   </div>
 
-  <div style="border-top:1px solid var(--border);">
-    <div class="home-cards" style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);">
+  <div id="hardline" style="border-top:1px solid var(--border);">
+    <div class="home-cards" style="display:grid;grid-template-columns:1fr;gap:1px;background:var(--border);">
 
-      <div class="home-card" onclick="showPage('hardline')" style="background:var(--off-black);padding:3.5rem 3rem;cursor:pointer;position:relative;overflow:hidden;transition:background 0.2s;"
+      <div class="home-card" onclick="showPage('preorder')" style="background:var(--off-black);padding:3.5rem 3rem;cursor:pointer;position:relative;overflow:hidden;transition:background 0.2s;"
         onmouseover="this.style.background='var(--panel)';this.querySelector('.bar').style.transform='scaleX(1)'"
         onmouseout="this.style.background='var(--off-black)';this.querySelector('.bar').style.transform='scaleX(0)'">
         <div class="bar" style="position:absolute;top:0;left:0;right:0;height:2px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform 0.35s ease;"></div>
         <div style="font-family:'Bebas Neue',sans-serif;font-size:5rem;color:var(--text-muted);opacity:0.2;line-height:1;position:absolute;top:2rem;right:2.5rem;">01</div>
-        <div style="font-family:'Barlow Condensed',sans-serif;font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem;">Secure Communications</div>
+        <div style="font-family:'Barlow Condensed',sans-serif;font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem;">Zero-RF Communications</div>
         <div class="card-title" style="font-family:'Bebas Neue',sans-serif;font-size:4rem;letter-spacing:0.05em;line-height:1;margin-bottom:1.25rem;">HARDLINE</div>
-        <div style="font-family:'Barlow Condensed',sans-serif;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-primary);font-weight:600;margin-bottom:1rem;padding-bottom:1rem;border-bottom:1px solid var(--border);">Encrypted Communication Over Fiber Optic</div>
-        <p style="font-size:0.875rem;color:var(--text-secondary);line-height:1.85;margin-bottom:2rem;">When RF emissions are a targeting liability, Hardline provides an encrypted communication channel over fiber optic. Zero RF signature at the user position. No network infrastructure required. Sessions establish automatically on connection.</p>
-        <span style="font-family:'Barlow Condensed',sans-serif;font-size:12px;letter-spacing:0.15em;text-transform:uppercase;color:var(--accent);">Learn more →</span>
+        <div style="font-family:'Barlow Condensed',sans-serif;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-primary);font-weight:600;margin-bottom:1rem;padding-bottom:1rem;border-bottom:1px solid var(--border);">Communicate Over Fiber Using Your Mobile Device. Zero RF Signature.</div>
+        <p style="font-size:0.875rem;color:var(--text-secondary);line-height:1.85;margin-bottom:2rem;">From mine rescue to military operations, some environments are not suitable for radio frequency transmissions. Hardline provides a communication channel over a fiber optic link, using a familiar mobile device user interface. No setup or infrastructure required. The comms link establishes automatically on connection.</p>
+        <span style="font-family:'Barlow Condensed',sans-serif;font-size:12px;letter-spacing:0.15em;text-transform:uppercase;color:var(--accent);">Pre-Order →</span>
       </div>
 
-      <div class="home-card" onclick="showPage('tripwire')" style="background:var(--off-black);padding:3.5rem 3rem;cursor:pointer;position:relative;overflow:hidden;transition:background 0.2s;"
-        onmouseover="this.style.background='var(--panel)';this.querySelector('.bar').style.transform='scaleX(1)'"
-        onmouseout="this.style.background='var(--off-black)';this.querySelector('.bar').style.transform='scaleX(0)'">
-        <div class="bar" style="position:absolute;top:0;left:0;right:0;height:2px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform 0.35s ease;"></div>
-        <div style="font-family:'Bebas Neue',sans-serif;font-size:5rem;color:var(--text-muted);opacity:0.2;line-height:1;position:absolute;top:2rem;right:2.5rem;">02</div>
-        <div style="font-family:'Barlow Condensed',sans-serif;font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem;">RF Sensing</div>
-        <div class="card-title" style="font-family:'Bebas Neue',sans-serif;font-size:4rem;letter-spacing:0.05em;line-height:1;margin-bottom:1.25rem;">TRIPWIRE</div>
-        <div style="font-family:'Barlow Condensed',sans-serif;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-primary);font-weight:600;margin-bottom:1rem;padding-bottom:1rem;border-bottom:1px solid var(--border);">Man Portable RF Triangulation</div>
-        <p style="font-size:0.875rem;color:var(--text-secondary);line-height:1.85;margin-bottom:2rem;">A network of man-portable sensing nodes that monitors the RF environment and triangulates emitter positions, deployable by a single operator without specialist training. Built for the most austere conditions.</p>
-        <span style="font-family:'Barlow Condensed',sans-serif;font-size:12px;letter-spacing:0.15em;text-transform:uppercase;color:var(--accent);">Learn more →</span>
-      </div>
 
     </div>
   </div>
 
-  <div style="border-top:1px solid var(--border);padding:4rem 3rem;max-width:1400px;margin:0 auto;">
-    <p style="font-family:'Bebas Neue',sans-serif;font-size:clamp(1.4rem,3vw,2.5rem);letter-spacing:0.06em;line-height:1.4;color:var(--text-secondary);max-width:1000px;">
-      <span style="color:var(--text-primary);">Enemy jamming, triangulation, and signals intelligence</span> have made RF emissions a liability. Blackmore Systems builds the solution.
-    </p>
-  </div>
 
   <footer>
     <div class="footer-copy">© 2026 Blackmore Systems LLC · Salt Lake City, UT</div>
@@ -274,30 +257,17 @@
 </div>
 
 <!-- HARDLINE -->
-<div id="page-hardline" class="page">
+<div id="page-preorder" class="page">
   <div style="display:flex;align-items:center;justify-content:center;min-height:60vh;padding:4rem 3rem;text-align:center;">
     <div>
       <div style="font-family:'Bebas Neue',sans-serif;font-size:clamp(5rem,13vw,10rem);letter-spacing:0.03em;line-height:0.88;margin-bottom:1.5rem;">HARDLINE</div>
-      <p style="font-family:'Barlow Condensed',sans-serif;font-size:13px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-muted);">Content coming soon</p>
+      <p style="font-family:'Barlow Condensed',sans-serif;font-size:13px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-muted);margin-bottom:2.5rem;">Pre-orders opening soon</p>
+      <span class="btn-ghost" onclick="showPage('contact')" style="display:inline-block;">Contact for updates</span>
     </div>
   </div>
   <footer>
     <div class="footer-copy">© 2026 Blackmore Systems LLC</div>
     <div class="footer-right">Hardline · Patent Pending</div>
-  </footer>
-</div>
-
-<!-- TRIPWIRE -->
-<div id="page-tripwire" class="page">
-  <div style="display:flex;align-items:center;justify-content:center;min-height:60vh;padding:4rem 3rem;text-align:center;">
-    <div>
-      <div style="font-family:'Bebas Neue',sans-serif;font-size:clamp(5rem,13vw,10rem);letter-spacing:0.03em;line-height:0.88;margin-bottom:1.5rem;">TRIPWIRE</div>
-      <p style="font-family:'Barlow Condensed',sans-serif;font-size:13px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-muted);">Content coming soon</p>
-    </div>
-  </div>
-  <footer>
-    <div class="footer-copy">© 2026 Blackmore Systems LLC</div>
-    <div class="footer-right">Tripwire · Patent Pending</div>
   </footer>
 </div>
 
