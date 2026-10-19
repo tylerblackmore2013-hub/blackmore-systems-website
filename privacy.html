@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hardline Privacy Policy · Blackmore Systems</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --black: #0a0a0a;
+    --off-black: #111214;
+    --border: rgba(255,255,255,0.08);
+    --text-primary: #f0ede8;
+    --text-secondary: #b0ada8;
+    --text-muted: #8a8780;
+    --accent: #c8a96e;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--black); color: var(--text-primary);
+    font-family: 'Barlow', sans-serif; font-weight: 300; line-height: 1.7; font-size: 16px;
+  }
+  nav {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 3rem; height: 64px; border-bottom: 1px solid var(--border);
+  }
+  .nav-logo {
+    font-family: 'Bebas Neue', sans-serif; font-size: 22px; letter-spacing: 0.12em;
+    color: var(--text-primary); text-decoration: none; display: flex; align-items: center; gap: 10px;
+  }
+  .nav-logo-mark {
+    width: 26px; height: 26px; border: 1.5px solid var(--accent);
+    display: flex; align-items: center; justify-content: center; transform: rotate(45deg); flex-shrink: 0;
+  }
+  .nav-logo-mark-inner { width: 7px; height: 7px; background: var(--accent); }
+  main { max-width: 760px; margin: 0 auto; padding: 5rem 3rem 4rem; }
+  .section-label {
+    font-family: 'Barlow Condensed', sans-serif; font-size: 11px; letter-spacing: 0.25em;
+    text-transform: uppercase; color: var(--accent); display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;
+  }
+  .section-label::after { content: ''; width: 36px; height: 1px; background: var(--accent); opacity: 0.5; }
+  h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2.5rem, 6vw, 4.5rem); letter-spacing: 0.05em; line-height: 1; margin-bottom: 0.75rem; }
+  .effective { font-family: 'Barlow Condensed', sans-serif; font-size: 12px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 3rem; }
+  h2 {
+    font-family: 'Barlow Condensed', sans-serif; font-size: 13px; letter-spacing: 0.15em; text-transform: uppercase;
+    color: var(--accent); margin: 2.5rem 0 0.75rem; padding-top: 1.5rem; border-top: 1px solid var(--border);
+  }
+  p, li { color: var(--text-secondary); font-size: 1rem; line-height: 1.85; margin-bottom: 0.9rem; }
+  ul { padding-left: 1.25rem; }
+  li { margin-bottom: 0.5rem; }
+  strong { color: var(--text-primary); font-weight: 500; }
+  a { color: var(--accent); text-decoration: none; }
+  footer {
+    border-top: 1px solid var(--border); padding: 2rem 3rem;
+    display: flex; align-items: center; justify-content: space-between;
+    font-family: 'Barlow Condensed', sans-serif; font-size: 11px; letter-spacing: 0.1em; color: var(--text-muted); text-transform: uppercase;
+  }
+  @media (max-width: 768px) {
+    nav { padding: 0 1rem; }
+    main { padding: 3rem 1.25rem; }
+    footer { flex-direction: column; gap: 0.5rem; padding: 1.5rem; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="/">
+    <div class="nav-logo-mark"><div class="nav-logo-mark-inner"></div></div>
+    BLACKMORE SYSTEMS
+  </a>
+</nav>
+
+<main>
+  <div class="section-label">Hardline for Android</div>
+  <h1>PRIVACY POLICY</h1>
+  <div class="effective">Effective October 19, 2026</div>
+
+  <p>Hardline is an application published by Blackmore Systems LLC ("Blackmore Systems", "we") for use with the Blackmore HL-40 fiber optic communication device. This policy describes what the application does with information on your device. The short version: Hardline has no internet access, operates no servers, and collects nothing. Everything the application handles stays on your phone or travels only over the physical fiber link between two HL-40 devices.</p>
+
+  <h2>What Hardline does</h2>
+  <p>Hardline connects your phone by USB to an HL-40 device. That device links by fiber optic cable to another HL-40 and phone. The application lets the two operators exchange text messages and place voice and video calls over that cable. There is no wireless signal, no cellular or Wi‑Fi use, and no connection to the internet. The application does not request the Android internet permission and cannot send data anywhere except across the connected cable.</p>
+
+  <h2>Information stored on your device</h2>
+  <ul>
+    <li><strong>Callsign.</strong> A display name you choose. It is sent to the operator at the other end of the cable so they can see who they are talking to.</li>
+    <li><strong>Operator identity.</strong> On first launch the application generates a cryptographic key pair in the Android Keystore and derives a short identifier from it. The identifier is shared with the other operator over the cable so threads stay with the same person across sessions. The key never leaves the device.</li>
+    <li><strong>Messages and call records.</strong> Text messages you send and receive, and a record of calls placed, received, missed, or declined, are stored in the application's private storage on your device so you can refer back to them. They are protected by Android's built-in storage encryption and are not accessible to other applications.</li>
+  </ul>
+  <p>Nothing in this list is transmitted to Blackmore Systems or to any third party.</p>
+
+  <h2>Microphone and camera</h2>
+  <p>The microphone is used only during a voice or video call, and the camera only during a video call with the camera turned on. Audio and video are encoded and sent across the cable to the other operator in real time. They are not recorded, stored, or sent anywhere else. Outside a call the microphone and camera are not accessed.</p>
+
+  <h2>Permissions</h2>
+  <ul>
+    <li><strong>USB device access</strong>, to communicate with the HL-40.</li>
+    <li><strong>Microphone</strong>, for voice and video calls.</li>
+    <li><strong>Camera</strong>, for video calls.</li>
+    <li><strong>Notifications</strong>, so an incoming call or message reaches you while another application is open.</li>
+    <li><strong>Foreground service</strong>, so the link to the HL-40 and an active call stay up while another application is open.</li>
+  </ul>
+
+  <h2>What we do not do</h2>
+  <ul>
+    <li>No accounts, sign-in, or registration.</li>
+    <li>No analytics, advertising, tracking, or crash reporting.</li>
+    <li>No location data.</li>
+    <li>No contacts, photos, or files read from your device.</li>
+    <li>No data shared with or sold to anyone.</li>
+  </ul>
+
+  <h2>Deleting your data</h2>
+  <p>Settings in the application include a Burn control that deletes all message history and call records on the device. Uninstalling the application removes everything it stored, including the operator identity. Because nothing is held off the device, there is nothing for Blackmore Systems to delete on your behalf.</p>
+
+  <h2>Children</h2>
+  <p>Hardline is a professional tool and is not directed at children under 13.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the new version will be posted at this address with a new effective date.</p>
+
+  <h2>Contact</h2>
+  <p>Blackmore Systems LLC, Salt Lake City, Utah<br>
+  <a href="mailto:contact@blackmore-systems.com">contact@blackmore-systems.com</a></p>
+</main>
+
+<footer>
+  <div>© 2026 Blackmore Systems LLC · Salt Lake City, UT</div>
+  <div>Hardline · Patent Pending</div>
+</footer>
+
+</body>
+</html>
